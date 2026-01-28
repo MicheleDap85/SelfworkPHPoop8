@@ -18,7 +18,7 @@ public function div($a, $b) {
 }
 
 public function sqr($a){
-  return sqrt($numero);
+  return sqrt($a);
 }
 }
 
@@ -45,3 +45,8 @@ class Rettangolo {
         return $this->sqr($this->sum($this->sqr($this->base), $this->sqr($this->altezza)));
     }
 }
+
+$rettangolo = new Rettangolo(4, 3);
+echo "Area: " . $rettangolo->area() . "\n";
+echo "Perimetro: " . $rettangolo->perimetro() . "\n";
+echo "Diagonale: " . $rettangolo->diagonal() . "\n";
